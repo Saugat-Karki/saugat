@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsr btech</title>
+    <script src="https://use.fontawesome.com/4e2ccde512.js"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index-style.css">
+</head>
+<body>
+
+    <!-- Navigation top div -->
+
+    <nav>
+        <div class="bars-menu">
+            <div class="line-01"></div>
+            <div class="line-02"></div>
+            <div class="line-03"></div>
+        </div>
+        <div class="logo-nav"></div>
+            <ul class="nav-links-col">
+                <li class="l-links-1"><a href="" class="a-links-01">Home</a></li>
+                    <li class="l-links-1"><p href="" class="products-dd">Our products</p>
+                        <ul class="nav-links-col2">
+                            <li><a href="" >Bio chemistry</a></li>
+                            <li><a href="">Poct</a></li>
+                            <li><a href="">Molecular diagnostics</a></li>
+                            <li><a href="">Electrolyte analyzer</a></li>
+                            <li><a href="">Coagulation analyzer</a></li>
+                        </ul>
+                    </li>
+                <li class="l-links-1"><a href="" class="a-links-01">Contact</a></li>
+                <li class="l-links-1"><a href="" class="a-links-01">About</a></li>
+            </ul>
+
+            <div class="social-media-icon">
+                <a href="" class="fa fa-facebook"  id="soc-icon-1"></a>
+                <a href="" class="fa fa-instagram" id="soc-icon"></a>
+            </div>
+        
+    </nav>
+
+    <!-- the bottom products-->
+<script>
+    // for navigation transition 
+    function navlinkone() {
+            var burger = document.querySelector(".bars-menu");
+
+            var slider = document.querySelector(".nav-links-col");
+            var lineOne = document.querySelector(".line-01")
+            var lineTwo = document.querySelector(".line-03")
+            var lineThree = document.querySelector(".line-02")
+            var logo = document.querySelector(".logo-nav");
+            var social = document.querySelector(".social-media-icon");
+            
+
+            burger.addEventListener("click" , () => {
+            slider.classList.toggle("nav-links-01-active");
+            lineOne.classList.toggle("bar-1-active");
+            lineTwo.classList.toggle("bar-2-active");
+            lineThree.classList.toggle("bar-3-active");
+            logo.classList.toggle("logo-active");
+            social.classList.toggle("soc-active");
+
+            });
+
+            
+        }
+        navlinkone();
+    </script>
+</body>
+</html>
