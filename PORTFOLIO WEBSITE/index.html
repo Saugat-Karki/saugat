@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <script src="https://use.fontawesome.com/4e2ccde512.js"></script>
+    <link rel="stylesheet" href="landing.css">
+    <title>Saugat karki</title>
+</head>
+<body>
+  <nav class="navigation-bar">
+     <img src="./LOGO-PF.png" alt="saugat karki" class="logo-nav">
+     <ul class="nav-links">
+         <li><a href="">Home</a></li>
+         <li><a href="">About me</a></li>
+         <li><a href="">Projects</a></li>
+         <li class="contactli"><a href="" class="contact">Contact</a></li>
+     <li class="social-media">
+         <a href="" class="sm-icons"><i class="fa fa-instagram"></i></a>
+         <a href="" class="sm-icons"><i class="fa fa-facebook"></i></a>
+         <a href="" class="sm-icons"><i class="fa fa-youtube-square"></i></a>
+         
+     </li>
+     <div class="banner-nav">
+         <p class="copyrightinmobile">  ©2021 , Saugat karki</p>
+     </div>
+
+     </ul>
+     <div class="burgermenu">
+       <div class="line1"></div>     
+       <div class="line2"></div>     
+       <div class="line3"></div>     
+    </div>
+
+  </nav>
+  <script>
+      function navlinkone() {
+    const burger = document.querySelector(".burgermenu");
+    
+    const slider = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+    const lineOne = document.querySelector(".line1")
+    const lineTwo = document.querySelector(".line3")
+    const lineThree = document.querySelector(".line2")
+    const logo = document.querySelector(".logo-nav");
+
+    burger.addEventListener("click" , () => {
+        slider.classList.toggle("afterClick");
+        lineOne.classList.toggle("bar-1-active");
+        lineTwo.classList.toggle("bar-2-active");
+        lineThree.classList.toggle("bar-3-active");
+        logo.classList.toggle("logo-remove");
+    });
+
+    
+}
+navlinkone();
+  </script>
+    
+</body>
+</html>
